@@ -1,0 +1,7 @@
+.location-finder {
+	margin-top: 1rem;
+	label {
+		display: block;
+		font-weight: bold;
+	}
+}

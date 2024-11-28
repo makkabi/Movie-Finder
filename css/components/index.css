@@ -1,0 +1,18 @@
+/* Komponenten */
+@import 'movie.css';
+@import 'movies.css';
+@import 'location-finder.css';
+
+.error {
+	color: var(--red-7);
+	font-size: 2rem;
+}
+
+.main-navigation {
+	display: flex;
+	gap: 1rem;
+	font-size: 1.5rem;
+	> a {
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,57 @@
+.filter {
+	label {
+		display: block;
+		font-weight: bold;
+	}
+}
+
+.movie-teasers {
+	margin: 1rem;
+	display: grid;
+	grid-gap: 2rem;
+	grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+}
+
+.teaser {
+	display: flex;
+	flex-direction: column;
+	box-shadow: var(--shadow-6);
+	background: white;
+	cursor: pointer;
+
+	transition: scale 0.2s var(--ease-spring-1);
+	&:hover,
+	&:focus-within {
+		scale: 1.05;
+	}
+
+	:where(.teaser__header) {
+		padding: var(--space-xs);
+	}
+
+	:where(.teaser__poster) {
+		margin-top: auto;
+		> img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	:where(.teaser__original-title) {
+		display: block;
+		margin-block-start: var(--space-xs);
+	}
+
+	:where(.teaser__title) {
+		margin: 0;
+		color: black;
+		word-wrap: break-word;
+		> a {
+			text-decoration: none;
+		}
+	}
+
+	:where(.teaser__date) {
+		margin: 0 0.5rem 0.5rem;
+	}
+}

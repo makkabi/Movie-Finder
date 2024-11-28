@@ -1,0 +1,29 @@
+.movie {
+	:where(.movie__title) {
+		font-size: 3rem;
+	}
+
+	:where(.movie__plot) {
+		font-style: italic;
+	}
+
+	:where(.movie__poster) {
+		display: block;
+		width: 100%;
+		max-width: 25rem;
+	}
+
+	:where(.movie__details, .movie__ratings) {
+		display: grid;
+		grid-template-columns: max-content auto;
+
+		> div {
+			display: contents;
+		}
+	}
+
+	dt {
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+	}
+}
